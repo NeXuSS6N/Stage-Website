@@ -1,0 +1,43 @@
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    /* Utilisation d'une police de caractères lisible */
+    margin: 0;
+    /* Supprimer les marges par défaut */
+    padding: 0;
+    /* Supprimer les rembourrages par défaut */
+    background-color: #f5f5f5;
+    /* Couleur de fond pour le corps de la page */
+    background-image : url(../assets/backgroundimage.jpg);
+}
+
+.container {
+    max-width: 800px;
+    /* Largeur maximale du contenu */
+    margin: 50px auto;
+    /* Centrer le contenu */
+    background-color: #fff;
+    /* Couleur de fond pour le conteneur */
+    padding: 20px;
+    /* Espacement interne du conteneur */
+    border-radius: 5px;
+    /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Ombre légère pour le conteneur */
+}
+
+/* Style pour le paragraphe d'erreur */
+.error-message {
+    color: #d9534f;
+    /* Couleur du texte d'erreur */
+    font-weight: bold;
+    /* Texte en gras */
+    margin-bottom: 20px;
+    /* Espacement en bas du paragraphe */
+}
+
+/* Style pour le paragraphe du détail de l'erreur */
+.error-detail {
+    color: #a94442;
+    /* Couleur du texte du détail de l'erreur */
+}
