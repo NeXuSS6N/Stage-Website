@@ -21,7 +21,7 @@ session_start();
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.122.0">
-  <title>Stage Website</title>
+  <title>Accueil</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
 
@@ -304,7 +304,7 @@ session_start();
                   <svg class="bi">
                     <use xlink:href="#house-fill" />
                   </svg>
-                  Tableau de bord
+                  Base de données
                 </a>
               </li>
               <li class="nav-item">
@@ -370,7 +370,7 @@ session_start();
       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div
           class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Tableau de bord</h1>
+          <h1 class="h2">Base de données</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group me-2">
               <button type="button" class="btn btn-sm btn-outline-secondary">Partager</button>
@@ -446,6 +446,38 @@ session_start();
                 <td>FO Completel 20M</td>
                 <td>77.129.160.40/29</td>
                 <td>77.129.160.46/29</td>
+              </tr>
+
+              <tr>
+                <td>DL Brest</td>
+                <td>BREST-101-OPT ex RIFAN H24</td>
+                <td>Base Navale de Brest IMNG BREST</td>
+                <td></td>
+                <td>BTP</td>
+                <td>Porte Surcouf Rue Alderic Lecomte</td>
+                <td>29200</td>
+                <td>BREST</td>
+                <td>-Simple accès à 20Mb/s
+                  <br>
+                  -GTR 4H 7J/7 H24
+                </td>
+                <td>DIRSI-DC</td>
+                <td>EMM</td>
+                <td>CIRISI BREST</td>
+                <td>HM0010000003103</td>
+                <td>I1951-00204-002</td>
+                <td>BCAT18001041</td>
+                <td>BCAT18001042</td>
+                <td>LAAB4T32
+                  <br>
+                  ou
+                  <br>
+                  LAAB4SPV
+                </td>
+                <td>54907</td>
+                <td>FO Completel 20M</td>
+                <td>77.129.160.0/29</td>
+                <td>77.129.160.6/29</td>
               </tr>
             </tbody>
           </table>
