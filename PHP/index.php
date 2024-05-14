@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// if ($_SESSION['LoggedIn']) {
+// if ($_SESSION['LOGGEDIN']) {
 
 //   header("Location: ../PHP/index.php");
 // }
