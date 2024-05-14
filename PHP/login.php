@@ -167,20 +167,18 @@
         <div class="modal-body p-5 pt-0">
           <form action="../BDD/auth.php" method="POST">
             <div class="form-floating mb-3">
-              <input type="username" class="form-control rounded-3" id="floatingInput" placeholder="">
+              <input type="username" class="form-control rounded-3" id="username" name="login" placeholder="" required>
               <label for="floatingInput">Nom d'utilisateur</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">Adresse mail</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <input type="password" class="form-control rounded-3" id="password" name="password" placeholder="Password"
+                required>
               <label for="floatingPassword">Mot de passe</label>
             </div>
             <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Se connecter</button>
 
           </form>
+          <p>Vous n'avez pas de compte ? <a href="./sign-up.php">Cliquez ici</a> pour vous inscrire.</p>
         </div>
       </div>
     </div>

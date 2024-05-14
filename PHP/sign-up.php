@@ -167,27 +167,29 @@
                 <div class="modal-body p-5 pt-0">
                     <form action="../BDD/addUser.php" method="POST">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control rounded-3" id="username" name="login" placeholder="">
+                            <input type="text" class="form-control rounded-3" id="username" name="login" placeholder=""
+                                required>
                             <label for="floatingInput">Nom d'utilisateur</label>
                         </div>
                         <div class="form-floating mb-3">
                             <input type="email" class="form-control rounded-3" id="email" name="email"
-                                placeholder="name@example.com">
+                                placeholder="name@example.com" required>
                             <label for="floatingInput">Adresse mail</label>
                         </div>
                         <div class="form-floating mb-3">
                             <input type="password" class="form-control rounded-3" id="password" name="password"
-                                placeholder="Password">
+                                placeholder="Password" required>
                             <label for="floatingPassword">Mot de passe</label>
                         </div>
                         <div class="form-floating mb-3">
                             <input type="password" class="form-control rounded-3" id="confirm_password"
-                                name="password_check" placeholder="Password">
+                                name="password_check" placeholder="Password" required>
                             <label for="floatingPassword">Confirmer le mot de passe</label>
                         </div>
                         <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">S'inscrire</button>
 
                     </form>
+                    <p>Déjà membre ? <a href="./login.php">Connectez-vous ici</a>.</p>
                 </div>
             </div>
         </div>
