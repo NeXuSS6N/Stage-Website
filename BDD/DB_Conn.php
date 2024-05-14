@@ -10,7 +10,7 @@
     $host = 'localhost';
     $user = 'root';
     $password = '';
-    $dbname = 'lolstats';
+    $dbname = 'bdd stage';
 
     $conn = mysqli_connect($host, $user, $password, $dbname);
     

@@ -1,7 +1,7 @@
 <?php
 // Démarre la session
 session_start();
-require_once '../PHP/constList.php';
+require_once './constList.php';
 
 // Vide les données de la session
 $_SESSION = array();
@@ -27,6 +27,6 @@ $_SESSION[LOGGEDIN] = false;
 session_destroy();
 
 // Redirige vers la page de connexion
-header("Location: ../php/login.php");
+header("Location: ../PHP/login.php");
 exit;
 ?>

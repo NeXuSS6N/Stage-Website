@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head>
-    <script src="./assets/js/color-modes.js">
+    <script src="../assets/js/color-modes.js">
 
     </script>
 
     <script>
             function openWin() {
-  window.open("./login.html","_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=500, height=800");
+  window.open("./login.php","_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=500, height=800");
   }
     </script>
 
@@ -24,7 +24,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-<link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -109,7 +109,7 @@
     <!-- Custom styles for this template -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="./assets/dashboard.css" rel="stylesheet">
+    <link href="../assets/dashboard.css" rel="stylesheet">
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -215,7 +215,7 @@
 </svg>
 
 <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="./index.html">DIRISI</a>
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="./index.php">DIRISI</a>
 
   <ul class="navbar-nav flex-row d-md-none">
     <li class="nav-item text-nowrap">
@@ -246,7 +246,7 @@
         <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
+              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="./index.php">
                 <svg class="bi"><use xlink:href="#house-fill"/></svg>
                 Tableau de bord
               </a>
@@ -278,7 +278,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="./login.html">
+              <a class="nav-link d-flex align-items-center gap-2" href="./login.php">
                 <svg class="bi"><use xlink:href="#door-closed"/></svg>
                 Se connecter
               </a>
@@ -373,7 +373,7 @@
     </main>
   </div>
 </div>
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js" integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp" crossorigin="anonymous"></script><script src="./assets/dashboard.js"></script></body>
 </html>

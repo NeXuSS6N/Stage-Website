@@ -65,7 +65,7 @@ if (
 $host = 'localhost';
 $user = 'root';
 $password = '';
-$dbname = 'lolstats';
+$dbname = 'bdd stage';
 $charset = 'utf8mb4';
 $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
 $options = [
