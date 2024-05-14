@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+// if ($_SESSION['LoggedIn']) {
+
+//   header("Location: ../PHP/index.php");
+// }
+?>
+
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
 
@@ -266,6 +275,8 @@
           </svg>
         </button>
       </li>
+
+
       <li class="nav-item text-nowrap">
         <button class="nav-link px-3 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu"
           aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -325,15 +336,19 @@
 
             <hr class="my-3">
 
-            <ul class="nav flex-column mb-auto">
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
+            <ul class="nav flex-column mb-auto" <?php
+            if (isset($_SESSION['login'])) {
+              echo '<li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="./profil.php">
                   <svg class="bi">
-                    <use xlink:href="#gear-wide-connected" />
-                  </svg>
-                  Paramètres
-                </a>
-              </li>
+                    <use xlink:href="#sign-in" />
+                  </svg>'
+                . $_SESSION['login'] .
+                '</a>
+              </li>';
+            } else {
+              echo ' 
+              
               <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="./login.php">
                   <svg class="bi">
@@ -341,14 +356,16 @@
                   </svg>
                   Se connecter
                 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="../BDD/logout.php">
-                  <svg class="bi">
-                    <use xlink:href="#sign-out" />
-                  </svg>
-                  Se déconnecter
-                </a>
+              </li>';
+
+            }
+            ?> <li class="nav-item">
+              <a class="nav-link d-flex align-items-center gap-2" href="../BDD/logout.php">
+                <svg class="bi">
+                  <use xlink:href="#sign-out" />
+                </svg>
+                Se déconnecter
+              </a>
               </li>
             </ul>
           </div>

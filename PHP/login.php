@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
 
@@ -163,6 +167,8 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
             onclick="window.location.href = './index.php';"></button>
         </div>
+
+
 
         <div class="modal-body p-5 pt-0">
           <form action="../BDD/auth.php" method="POST">

@@ -21,12 +21,12 @@ if (ini_get("session.use_cookies")) {
 }
 
 // Définit la variable de session "loggedin" sur false
-$_SESSION[LOGGEDIN] = false;
+$_SESSION[LOGGEDIN] = false;    
 
 // Détruit la session
 session_destroy();
 
-// Redirige vers la page de connexion
-header("Location: ../PHP/login.php");
+// Redirige après la déconnexion
+header("Location: ../PHP/index.php");
 exit;
 ?>
