@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="./assets/js/color-modes.js"></script>
+  <head>
+    <script src="./assets/js/color-modes.js">
+
+    </script>
+
+    <script>
+            function openWin() {
+  window.open("./login.html","_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=500, height=800");
+  }
+    </script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -206,7 +215,7 @@
 </svg>
 
 <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">DIRISI</a>
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="./index.html">DIRISI</a>
 
   <ul class="navbar-nav flex-row d-md-none">
     <li class="nav-item text-nowrap">
@@ -269,9 +278,9 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
+              <a class="nav-link d-flex align-items-center gap-2" href="./login.html">
                 <svg class="bi"><use xlink:href="#door-closed"/></svg>
-                Se déconnecter
+                Se connecter
               </a>
             </li>
           </ul>
@@ -325,6 +334,9 @@
           </thead>
           <tbody>
             <tr>
+              <form>
+                <input type="button" value="Open Window" onclick="openWin()">
+              </form>
               <td>DL Brest</td>
               <td>BREST-100-OPT HIA-H24</td>
               <td>HIA CLERMONT TONNERRE</td>
