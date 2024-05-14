@@ -1,4 +1,5 @@
 <?php
+require_once '../BDD/constList.php';
 session_start();
 
 // if ($_SESSION['LOGGEDIN']) {
@@ -13,12 +14,6 @@ session_start();
 <head>
   <script src="../assets/js/color-modes.js">
 
-  </script>
-
-  <script>
-    function openWin() {
-      window.open("./login.php", "_blank", "toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=500, height=800");
-    }
   </script>
 
   <meta charset="utf-8">
@@ -422,9 +417,6 @@ session_start();
             </thead>
             <tbody>
               <tr>
-                <form>
-                  <input type="button" value="Open Window" onclick="openWin()">
-                </form>
                 <td>DL Brest</td>
                 <td>BREST-100-OPT HIA-H24</td>
                 <td>HIA CLERMONT TONNERRE</td>
