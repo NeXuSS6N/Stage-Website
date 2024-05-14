@@ -149,7 +149,7 @@ if ($msg != "") {
     header("Location: error.php?msg=" . $msg);
     exit();
 } else {
-    header("Location: ../PHP/index.php");
+    header("Location: ../PHP/profil.php");
 }
 //------------------------------------
 
