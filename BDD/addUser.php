@@ -11,7 +11,7 @@
 
 // Vérifie si la méthode HTTP est POST
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
-    $msg = "Méthode POSt attendue. Reçu :" . $_SERVER["REQUEST_METHOD"];
+    $msg = "Méthode POST attendue. Reçu :" . $_SERVER["REQUEST_METHOD"];
     header("Location: error.php?msg=" . $msg);
     exit();
 }
@@ -156,7 +156,7 @@ if ($msg != "") {
 // |___/ \____/   \___/_| |_|___/\___|_|   \__|                                    
 //------------------------------------          
 //$pwd_hashed = password_hash($pwd_unhashed, PASSWORD_DEFAULT);
-$pwd_hashed = $pwd_unhashed ; //password_hash($pwd_unhashed, PASSWORD_DEFAULT);
+$pwd_hashed = $pwd_unhashed; //password_hash($pwd_unhashed, PASSWORD_DEFAULT);
 
 // Insère l'utilisateur dans la base de données
 $sql = "INSERT INTO account (J_Username, J_Mdp, J_Mail) 
