@@ -371,75 +371,75 @@ require_once "../BDD/DB_Conn.php"
 
 
         $resultat = mysqli_query($conn, $sqlQuery);
-
-        foreach ($resultat as $resultats) {
-
-          ?>
-          <h2>Données</h2>
-          <div class="table-responsive small">
-            <table class="table table-striped table-sm">
-              <thead>
-                <tr>
-                  <th scope="col"><?php echo $resultats['DL'] ?></th>
-                  <th scope="col"><?php echo $resultats['Nouveau NOM'] ?></th>
-                  <th scope="col"><?php echo $resultats['Entité'] ?></th>
-                  <th scope="col"><?php echo $resultats['Unités Impact Internet'] ?></th>
-                  <th scope="col"><?php echo $resultats['Trigramme'] ?></th>
-                  <th scope="col"><?php echo $resultats['Adresse'] ?></th>
-                  <th scope="col"><?php echo $resultats['Code postal'] ?></th>
-                  <th scope="col"><?php echo $resultats['Ville'] ?></th>
-                  <th scope="col"><?php echo $resultats['Prestations retenues dans le MIM3'] ?></th>
-                  <th scope="col"><?php echo $resultats['BOP / financeur Compte de facturation'] ?></th>
-                  <th scope="col"><?php echo $resultats['Au profit de'] ?></th>
-                  <th scope="col"><?php echo $resultats['CIRISI ou service technique de soutien'] ?></th>
-                  <th scope="col"><?php echo $resultats['Master ID'] ?></th>
-                  <th scope="col"><?php echo $resultats['CLS'] ?></th>
-                  <th scope="col"><?php echo $resultats['BCAT Lien'] ?></th>
-                  <th scope="col"><?php echo $resultats['BCAT Service'] ?></th>
-                  <th scope="col"><?php echo $resultats['Référence SFR du lien'] ?></th>
-                  <th scope="col"><?php echo $resultats['Référence WFF'] ?></th>
-                  <th scope="col"><?php echo $resultats['Type lien'] ?></th>
-                  <th scope="col"><?php echo $resultats['IP LAN subnet'] ?></th>
-                  <th scope="col"><?php echo $resultats['IP LAN routeur SFR'] ?></th>
-
-                </tr>
-              </thead>
-              <?php
-        }
         ?>
-            <tbody>
+        <h2>Données</h2>
+        <div class="table-responsive small">
+          <table class="table table-striped table-sm">
+            <thead>
               <tr>
-                <td>DL Brest</td>
-                <td>BREST-100-OPT HIA-H24</td>
-                <td>HIA CLERMONT TONNERRE</td>
-                <td>HIA CLERMONT TONNERRE</td>
-                <td>HIA</td>
-                <td>4 Rue du Colonel Fonferrier</td>
-                <td>29200</td>
-                <td>BREST</td>
-                <td>-Simple accès à 20Mb/s
-                  <br>
-                  -GTR 4H 7J/7 H24
-                </td>
-                <td>SSA-DC</td>
-                <td>SSA</td>
-                <td>SSI HIA Brest</td>
-                <td>HM0010000002951</td>
-                <td>I1951-00194-002</td>
-                <td>BCAT18000446</td>
-                <td>BCAT18000447</td>
-                <td>LAAB4X7E
-                  <br>
-                  ou
-                  <br>
-                  LAAB4X1B
-                </td>
-                <td>54956</td>
-                <td>FO Completel 20M</td>
-                <td>77.129.160.40/29</td>
-                <td>77.129.160.46/29</td>
-              </tr>
+                <th scope="col">DL</th>
+                <th scope="col">Nouveau NOM</th>
+                <th scope="col">Entité</th>
+                <th scope="col">Unités / Impact (Internet)</th>
+                <th scope="col">Trigramme</th>
+                <th scope="col">Adresse</th>
+                <th scope="col">Code postal</th>
+                <th scope="col">Ville</th>
+                <th scope="col">Prestations retenues dans le MIM3</th>
+                <th scope="col">BOP / financeur Compte de facturation</th>
+                <th scope="col">Au profit de </th>
+                <th scope="col">CIRISI ou service technique de soutien</th>
+                <th scope="col">Master ID</th>
+                <th scope="col">CLS</th>
+                <th scope="col">BCAT Lien</th>
+                <th scope="col">BCAT Service</th>
+                <th scope="col">Référence SFR du lien</th>
+                <th scope="col">Référence WFF</th>
+                <th scope="col">Type lien</th>
+                <th scope="col">@IP LAN subnet</th>
+                <th scope="col">@IP LAN routeur SFR</th>
 
+              </tr>
+            </thead>
+            <tbody>
+              <?php
+              foreach ($resultat as $resultats) {
+
+                ?>
+                <tr>
+                  <td>DL Brest</td>
+                  <td>BREST-100-OPT HIA-H24</td>
+                  <td>HIA CLERMONT TONNERRE</td>
+                  <td>HIA CLERMONT TONNERRE</td>
+                  <td>HIA</td>
+                  <td>4 Rue du Colonel Fonferrier</td>
+                  <td>29200</td>
+                  <td>BREST</td>
+                  <td>-Simple accès à 20Mb/s
+                    <br>
+                    -GTR 4H 7J/7 H24
+                  </td>
+                  <td>SSA-DC</td>
+                  <td>SSA</td>
+                  <td>SSI HIA Brest</td>
+                  <td>HM0010000002951</td>
+                  <td>I1951-00194-002</td>
+                  <td>BCAT18000446</td>
+                  <td>BCAT18000447</td>
+                  <td>LAAB4X7E
+                    <br>
+                    ou
+                    <br>
+                    LAAB4X1B
+                  </td>
+                  <td>54956</td>
+                  <td>FO Completel 20M</td>
+                  <td>77.129.160.40/29</td>
+                  <td>77.129.160.46/29</td>
+                </tr>
+                <?php
+              }
+              ?>
               <tr>
                 <td>DL Brest</td>
                 <td>BREST-101-OPT ex RIFAN H24</td>
