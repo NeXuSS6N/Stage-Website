@@ -407,70 +407,31 @@ require_once "../BDD/DB_Conn.php"
 
                 ?>
                 <tr>
-                  <td>DL Brest</td>
-                  <td>BREST-100-OPT HIA-H24</td>
-                  <td>HIA CLERMONT TONNERRE</td>
-                  <td>HIA CLERMONT TONNERRE</td>
-                  <td>HIA</td>
-                  <td>4 Rue du Colonel Fonferrier</td>
-                  <td>29200</td>
-                  <td>BREST</td>
-                  <td>-Simple accès à 20Mb/s
-                    <br>
-                    -GTR 4H 7J/7 H24
-                  </td>
-                  <td>SSA-DC</td>
-                  <td>SSA</td>
-                  <td>SSI HIA Brest</td>
-                  <td>HM0010000002951</td>
-                  <td>I1951-00194-002</td>
-                  <td>BCAT18000446</td>
-                  <td>BCAT18000447</td>
-                  <td>LAAB4X7E
-                    <br>
-                    ou
-                    <br>
-                    LAAB4X1B
-                  </td>
-                  <td>54956</td>
-                  <td>FO Completel 20M</td>
-                  <td>77.129.160.40/29</td>
-                  <td>77.129.160.46/29</td>
+                  <td><?php echo $resultats['DL'] ?></td>
+                  <td><?php echo $resultats['Nouveau NOM'] ?></td>
+                  <td><?php echo $resultats['Entité'] ?></td>
+                  <td><?php echo $resultats['Unités Impact Internet'] ?></td>
+                  <td><?php echo $resultats['Trigramme'] ?></td>
+                  <td><?php echo $resultats['Adresse'] ?></td>
+                  <td><?php echo $resultats['Code postal'] ?></td>
+                  <td><?php echo $resultats['Ville'] ?></td>
+                  <td><?php echo $resultats['Prestations retenues dans le MIM3'] ?></td>
+                  <td><?php echo $resultats['BOP / financeur Compte de facturation'] ?></td>
+                  <td><?php echo $resultats['Au profit de'] ?></td>
+                  <td><?php echo $resultats['CIRISI ou service technique de soutien'] ?></td>
+                  <td><?php echo $resultats['Master ID'] ?></td>
+                  <td><?php echo $resultats['CLS'] ?></td>
+                  <td><?php echo $resultats['BCAT Lien'] ?></td>
+                  <td><?php echo $resultats['BCAT Service'] ?></td>
+                  <td><?php echo $resultats['Référence SFR du lien'] ?></td>
+                  <td><?php echo $resultats['Référence WFF'] ?></td>
+                  <td><?php echo $resultats['Type lien'] ?></td>
+                  <td><?php echo $resultats['IP LAN subnet'] ?></td>
+                  <td><?php echo $resultats['IP LAN routeur SFR'] ?></td>
                 </tr>
                 <?php
               }
               ?>
-              <tr>
-                <td>DL Brest</td>
-                <td>BREST-101-OPT ex RIFAN H24</td>
-                <td>Base Navale de Brest IMNG BREST</td>
-                <td></td>
-                <td>BTP</td>
-                <td>Porte Surcouf Rue Alderic Lecomte</td>
-                <td>29200</td>
-                <td>BREST</td>
-                <td>-Simple accès à 20Mb/s
-                  <br>
-                  -GTR 4H 7J/7 H24
-                </td>
-                <td>DIRSI-DC</td>
-                <td>EMM</td>
-                <td>CIRISI BREST</td>
-                <td>HM0010000003103</td>
-                <td>I1951-00204-002</td>
-                <td>BCAT18001041</td>
-                <td>BCAT18001042</td>
-                <td>LAAB4T32
-                  <br>
-                  ou
-                  <br>
-                  LAAB4SPV
-                </td>
-                <td>54907</td>
-                <td>FO Completel 20M</td>
-                <td>77.129.160.0/29</td>
-                <td>77.129.160.6/29</td>
-              </tr>
             </tbody>
           </table>
         </div>
