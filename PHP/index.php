@@ -1,12 +1,12 @@
 <?php
 require_once '../BDD/constList.php';
 session_start();
-
-// if ($_SESSION['LOGGEDIN']) {
-
-//   header("Location: ../PHP/index.php");
-// }
 ?>
+
+<?php
+require_once "../BDD/DB_Conn.php"
+  ?>
+
 
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
@@ -366,35 +366,47 @@ session_start();
           </div>
         </div>
 
-        <h2>Données</h2>
-        <div class="table-responsive small">
-          <table class="table table-striped table-sm">
-            <thead>
-              <tr>
-                <th scope="col">DL</th>
-                <th scope="col">Nouveau NOM</th>
-                <th scope="col">Entité</th>
-                <th scope="col">Unités / Impact (Internet)</th>
-                <th scope="col">Trigramme</th>
-                <th scope="col">Adresse</th>
-                <th scope="col">Code postal</th>
-                <th scope="col">Ville</th>
-                <th scope="col">Prestations retenues dans le MIM3</th>
-                <th scope="col">BOP / financeur Compte de facturation</th>
-                <th scope="col">Au profit de </th>
-                <th scope="col">CIRISI ou service technique de soutien</th>
-                <th scope="col">Master ID</th>
-                <th scope="col">CLS</th>
-                <th scope="col">BCAT Lien</th>
-                <th scope="col">BCAT Service</th>
-                <th scope="col">Référence SFR du lien</th>
-                <th scope="col">Référence WFF</th>
-                <th scope="col">Type lien</th>
-                <th scope="col">@IP LAN subnet</th>
-                <th scope="col">@IP LAN routeur SFR</th>
+        <?php
+        $sqlQuery = "SELECT * FROM bdd";
 
-              </tr>
-            </thead>
+
+        $resultat = mysqli_query($conn, $sqlQuery);
+
+        foreach ($resultat as $resultats) {
+
+          ?>
+          <h2>Données</h2>
+          <div class="table-responsive small">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th scope="col"><?php echo $resultats['DL'] ?></th>
+                  <th scope="col"><?php echo $resultats['Nouveau NOM'] ?></th>
+                  <th scope="col"><?php echo $resultats['Entité'] ?></th>
+                  <th scope="col"><?php echo $resultats['Unités Impact Internet'] ?></th>
+                  <th scope="col"><?php echo $resultats['Trigramme'] ?></th>
+                  <th scope="col"><?php echo $resultats['Adresse'] ?></th>
+                  <th scope="col"><?php echo $resultats['Code postal'] ?></th>
+                  <th scope="col"><?php echo $resultats['Ville'] ?></th>
+                  <th scope="col"><?php echo $resultats['Prestations retenues dans le MIM3'] ?></th>
+                  <th scope="col"><?php echo $resultats['BOP / financeur Compte de facturation'] ?></th>
+                  <th scope="col"><?php echo $resultats['Au profit de'] ?></th>
+                  <th scope="col"><?php echo $resultats['CIRISI ou service technique de soutien'] ?></th>
+                  <th scope="col"><?php echo $resultats['Master ID'] ?></th>
+                  <th scope="col"><?php echo $resultats['CLS'] ?></th>
+                  <th scope="col"><?php echo $resultats['BCAT Lien'] ?></th>
+                  <th scope="col"><?php echo $resultats['BCAT Service'] ?></th>
+                  <th scope="col"><?php echo $resultats['Référence SFR du lien'] ?></th>
+                  <th scope="col"><?php echo $resultats['Référence WFF'] ?></th>
+                  <th scope="col"><?php echo $resultats['Type lien'] ?></th>
+                  <th scope="col"><?php echo $resultats['IP LAN subnet'] ?></th>
+                  <th scope="col"><?php echo $resultats['IP LAN routeur SFR'] ?></th>
+
+                </tr>
+              </thead>
+              <?php
+        }
+        ?>
             <tbody>
               <tr>
                 <td>DL Brest</td>
