@@ -6,6 +6,7 @@ session_start();
 <html lang="en" data-bs-theme="auto">
 
 <head>
+  <link rel="icon" type="image/x-icon" href="../assets/Dirisiico.png" />
   <script src="../assets/js/color-modes.js"></script>
 
   <meta charset="utf-8">

@@ -8,7 +8,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../assets/LoLStatsIco.png" />
+    <link rel="icon" type="image/x-icon" href="../assets/Dirisiico.png" />
     <link rel="stylesheet" href="../css/success.css">
     <title>Utilisateur ajouté avec succès !</title>
 </head>

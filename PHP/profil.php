@@ -10,6 +10,7 @@ if (isset($_SESSION["LOGGEDIN"])) {
 <html lang="en" data-bs-theme="auto">
 
 <head>
+<link rel="icon" type="image/x-icon" href="../assets/Dirisiico.png" />
     <script src="../assets/js/color-modes.js"></script>
     <title>Mon Profil</title>
 
@@ -326,7 +327,8 @@ if (isset($_SESSION["LOGGEDIN"])) {
               </li>';
 
                         }
-                        ?> <li class="nav-item">
+                        ?> 
+                        <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2" href="../BDD/logout.php">
                                 <svg class="bi">
                                     <use xlink:href="#sign-out" />
