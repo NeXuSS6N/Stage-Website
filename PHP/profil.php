@@ -349,6 +349,10 @@ if (isset($_SESSION["LOGGEDIN"])) {
                         <h2>Profil de
                             <?php echo $_SESSION['login']; ?>
                         </h2>
+                        <?php if ($_SESSION['Id'] === 999): ?>
+
+                        <?php require_once "./users.php" ?>
+                        <?php endif; ?> 
                     </div>
                 </div>
                 <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
