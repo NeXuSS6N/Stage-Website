@@ -20,7 +20,7 @@ if (isset($_SESSION["LOGGEDIN"])) {
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
     <style>
         .bd-placeholder-img {
