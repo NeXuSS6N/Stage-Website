@@ -8,6 +8,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
+    // Vérifie que tous les champs sont remplis
+    if (empty($username) || empty($email) || empty($password)) {
+        // Affiche un message d'erreur en JavaScript
+        echo "<script>alert('Tous les champs doivent être remplis.'); window.history.back();</script>";
+        exit;
+    }
+
     // Prépare une déclaration SQL avec des paramètres liés
     $sqlQuery = "INSERT INTO account (J_Username, J_Mail, J_Mdp) VALUES (?, ?, ?)";
     if ($stmt = mysqli_prepare($conn, $sqlQuery)) {
