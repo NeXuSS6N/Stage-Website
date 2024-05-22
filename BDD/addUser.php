@@ -35,11 +35,34 @@ $pwd_unhashed_check = isset($_POST['password_check']) ? $_POST['password_check']
 // $pwd_unhashed = (isset($_POST['password']) && preg_match($pattern, $_POST['password'])) ? $_POST['password'] : "";
 // $pwd_unhashed_check = (isset($_POST['password_check']) && preg_match($pattern, $_POST['password_check'])) ? $_POST['password_check'] : "";
 
+
+
+function isValidPassword($password) {
+    // Vérifier si le mot de passe contient au moins une lettre majuscule
+    $hasUppercase = preg_match('/[A-Z]/', $password);
+    // Vérifier si le mot de passe contient au moins une lettre minuscule
+    $hasLowercase = preg_match('/[a-z]/', $password);
+    // Vérifier si le mot de passe contient au moins un chiffre
+    $hasDigit = preg_match('/\d/', $password);
+    // Vérifier si le mot de passe contient au moins un caractère spécial
+    $hasSpecialChar = preg_match('/[\W_]/', $password); // \W est pour tout caractère non alphabétique, non numérique
+
+    // Vérifier que toutes les conditions sont remplies
+    return $hasUppercase && $hasLowercase && $hasDigit && $hasSpecialChar;
+}
+
 // Vérifie si les mots de passe correspondent
-if ($pwd_unhashed != $pwd_unhashed_check) {
-    $msg = "Les deux mots de passes ne correspondent pas.";
-    header("Location: error.php?msg=" . $msg);
-    exit();
+// if ($pwd_unhashed != $pwd_unhashed_check) {
+//     $msg = "Les deux mots de passes ne correspondent pas.";
+//     header("Location: error.php?msg=" . $msg);
+//     exit();
+// }
+
+
+if (isValidPassword($password)) {
+    echo "Le mot de passe est valide.";
+} else {
+    echo "Le mot de passe n'est pas valide.";
 }
 
 
