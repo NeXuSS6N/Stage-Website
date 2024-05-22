@@ -1,2 +1,2 @@
 <?php
-    const LOGGEDIN = 'LoggedIn';
+const LOGGEDIN = 'LoggedIn';

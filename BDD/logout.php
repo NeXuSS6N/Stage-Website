@@ -21,7 +21,7 @@ if (ini_get("session.use_cookies")) {
 }
 
 // Définit la variable de session "loggedin" sur false
-$_SESSION[LOGGEDIN] = false;    
+$_SESSION[LOGGEDIN] = false;
 
 // Détruit la session
 session_destroy();

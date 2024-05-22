@@ -47,11 +47,11 @@ foreach ($resultat as $resultats) {
 }
 ?>
 <div class="user-content">
-<!-- Formulaire pour ajouter un nouvel utilisateur -->
-<form method="post" action="../CRUD/add_user.php">
-  <input type="text" name="username" placeholder="Nom d'utilisateur">
-  <input type="email" name="email" placeholder="Adresse e-mail">
-  <input type="password" name="password" placeholder="Mot de passe">
-  <button type="submit">Ajouter utilisateur</button>
-</form>
+  <!-- Formulaire pour ajouter un nouvel utilisateur -->
+  <form method="post" action="../CRUD/add_user.php">
+    <input type="text" name="username" placeholder="Nom d'utilisateur">
+    <input type="email" name="email" placeholder="Adresse e-mail">
+    <input type="password" name="password" placeholder="Mot de passe">
+    <button type="submit">Ajouter utilisateur</button>
+  </form>
 </div>
