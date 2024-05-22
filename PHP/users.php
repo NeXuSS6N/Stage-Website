@@ -26,7 +26,9 @@ foreach ($resultat as $resultats) {
   <div class="user-content">
     <h5>
       <?php echo $resultats['J_Username'] ?>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <?php echo $resultats['J_Mail'] ?>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <?php echo $resultats['J_Mdp'] ?>
     </h5>
     <!-- Formulaire pour modifier les informations de l'utilisateur -->
