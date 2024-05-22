@@ -184,7 +184,7 @@ $msg = "<br>login -> " . $login;
 $msg = $msg . "<br>password -> " . $pwd;
 $msg = $msg . "<br>passwordVerify -> " . password_verify($pwd_unhashed, $pwd_hashed);
 $msg = $msg . "<br>email -> " . $email;
-header("Location: success.php?email=" . $email . "&msg=" . $msg);
+header("Location: ./success.php?email=" . $email . "&msg=" . $msg);
 exit();
 //------------------------------------
 
