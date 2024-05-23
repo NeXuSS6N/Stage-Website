@@ -1,14 +1,22 @@
 <?php
+session_start();
+
+if ((isset($_SESSION["LoggedIn"]) === false) || (($_SESSION['Id']) != 999)) {
+    echo '<script type="text/javascript">';
+    echo 'alert("Accès refusé : vous n\'avez pas les autorisations nécessaires pour exporter la base de données.");';
+    echo 'window.location.href = "./index.php";';
+    echo '</script>';
+    exit(); // Arrêt du script
+}
 //connexion bdd
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "bdd stage";
 
-// Créer une connexion
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Vérifier la connexion
 if ($conn->connect_error) {
     die("Connexion échouée: " . $conn->connect_error);
 }
@@ -31,7 +39,7 @@ if ($resultat->num_rows > 0) {
     $filename = "bdd.json";
     $filepath = __DIR__ . '/' . $filename;
 
-    // Enregistrer les données JSON dans un fichier
+    // JSON -> fichier
     file_put_contents($filepath, $json_data);
 
     // téléchargement
