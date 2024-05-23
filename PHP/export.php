@@ -33,7 +33,7 @@ if ($resultat->num_rows > 0) {
     }
 
     // Convertir les données en JSON
-    $json_data = json_encode($data, JSON_PRETTY_PRINT);
+    $json_data = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 
     // nom du fichier + chemin définis
     $filename = "bdd.json";
@@ -48,7 +48,7 @@ if ($resultat->num_rows > 0) {
     readfile($filepath);
 
     // Supprimer le fichier après dl
-    unlink($filepath);
+    register_shutdown_function('unlink', $filepath);
 } else {
     echo "0 résultats";
 }
