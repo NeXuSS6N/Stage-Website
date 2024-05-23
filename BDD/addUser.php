@@ -37,7 +37,8 @@ $pwd_unhashed_check = isset($_POST['password_check']) ? $_POST['password_check']
 
 
 
-function isValidPassword($password) {
+function isValidPassword($password)
+{
     // Vérifier si le mot de passe contient au moins une lettre majuscule
     $hasUppercase = preg_match('/[A-Z]/', $password);
     // Vérifier si le mot de passe contient au moins une lettre minuscule
@@ -203,11 +204,7 @@ $stmt->execute();
 // /\__/ / |_| | (_| (_|  __/\__ \__ \
 // \____/ \__,_|\___\___\___||___/___/
 //------------------------------------
-$msg = "<br>login -> " . $login;
-$msg = $msg . "<br>password -> " . $pwd;
-$msg = $msg . "<br>passwordVerify -> " . password_verify($pwd_unhashed, $pwd_hashed);
-$msg = $msg . "<br>email -> " . $email;
-header("Location: ./success.php?email=" . $email . "&msg=" . $msg);
+header("Location: ../PHP/success.php");
 exit();
 //------------------------------------
 
