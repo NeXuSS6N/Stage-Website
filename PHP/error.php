@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/error.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <title>Erreur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -19,6 +20,7 @@
         echo "</p>";
     }
     ?>
+    <button class="btn" onclick="window.location.href = './index.php';"><i class="fas fa-times-circle"></i></button>
 </body>
 
 </html>
