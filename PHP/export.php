@@ -3,7 +3,7 @@ session_start();
 
 if ((isset($_SESSION["LoggedIn"]) === false) || (($_SESSION['Id']) != 999)) {
     echo '<script type="text/javascript">';
-    echo 'alert("Accès refusé : vous n\'avez pas les autorisations nécessaires pour exporter la base de données.");';
+    echo 'alert("Accès refusé : vous devez être Administrateur pour exporter la base de données.");';
     echo 'window.location.href = "./index.php";';
     echo '</script>';
     exit(); // Arrêt du script
