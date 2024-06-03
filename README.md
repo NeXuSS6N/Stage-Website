@@ -8,3 +8,8 @@ Fonctionnalités :
     - Modifier les utilisateurs présent dans la base de donnée (seulement pour l'Admin)
     - Création d'un compte utilisateur.
     - Visuel créé avec Bootstrap.
+
+
+
+######
+    - Tentative de création d'un bot discord, permettant d'interagir avec le site web.
