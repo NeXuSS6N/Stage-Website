@@ -9,7 +9,7 @@ require_once "../BDD/DB_Conn.php"
 
 
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+<html lang="fr" data-bs-theme="auto">
 
 <head>
   <link rel="icon" type="image/x-icon" href="../assets/Dirisiico.png" />
@@ -20,15 +20,9 @@ require_once "../BDD/DB_Conn.php"
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.122.0">
+  <meta name="author" content="Ruben Pénalvez">
+
   <title>Accueil</title>
-
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
-
-
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
   <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
   <link href="../assets/dashboard.css" rel="stylesheet">
@@ -113,9 +107,9 @@ require_once "../BDD/DB_Conn.php"
   </style>
 
 
-  <!-- Custom styles for this template -->
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
+
   <link href="../assets/dashboard.css" rel="stylesheet">
 </head>
 
@@ -163,23 +157,11 @@ require_once "../BDD/DB_Conn.php"
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
-          aria-pressed="false">
+          aria-pressed="true">
           <svg class="bi me-2 opacity-50" width="1em" height="1em">
             <use href="#moon-stars-fill"></use>
           </svg>
           Sombre
-          <svg class="bi ms-auto d-none" width="1em" height="1em">
-            <use href="#check2"></use>
-          </svg>
-        </button>
-      </li>
-      <li>
-        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
-          aria-pressed="true">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em">
-            <use href="#circle-half"></use>
-          </svg>
-          Auto
           <svg class="bi ms-auto d-none" width="1em" height="1em">
             <use href="#check2"></use>
           </svg>

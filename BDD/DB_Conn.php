@@ -15,5 +15,5 @@ $dbname = 'bdd stage';
 $conn = mysqli_connect($host, $user, $password, $dbname);
 
 if (!$conn) {
-    die("Connection Failed");
+    die("La connexion à échoué");
 }

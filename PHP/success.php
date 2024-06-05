@@ -2,8 +2,11 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ruben Pénalvez">
+
     <link rel="icon" type="image/x-icon" href="../assets/Dirisiico.png" />
     <link rel="stylesheet" href="../CSS/success.css">
     <title>Utilisateur ajouté avec succès !</title>

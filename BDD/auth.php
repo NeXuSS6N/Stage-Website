@@ -21,9 +21,6 @@ $login = isset($_POST['login']) ? $_POST['login'] : "";
 $pwd_unhashed = isset($_POST['password']) ? $_POST['password'] : "";
 
 
-
-
-
 //------------------------------------  
 //  _____ _               _      _____                    
 // /  __ \ |             | |    |  ___|                   
@@ -45,13 +42,6 @@ if (
     exit();
 }
 //------------------------------------
-
-
-
-
-
-
-
 
 //------------------------------------
 //  _____      _ _    ____________ 
@@ -80,14 +70,9 @@ try {
 } catch (PDOException $e) {
     $msg = $e->getMessage();
     header("Location: error.php?msg=" . $msg);
-    die("Connection failed: " . $e->getMessage() . ' <br> Wtih error n° ' . (int) $e->getCode());
+    die("La connexion à échoué: " . $e->getMessage() . ' <br> code erreur n° ' . (int) $e->getCode());
 }
 //------------------------------------
-
-
-
-
-
 
 //------------------------------------
 // ____________   _____ _               _    
@@ -134,7 +119,7 @@ if ($stmt->rowCount() == 1) {
     }
 
 } else {
-    $msg = "Login doesn't exists or is duplicate.";
+    $msg = "le login existe pas ou est dupliqué";
 }
 //------------------------------------
 // ______         _ _               _   

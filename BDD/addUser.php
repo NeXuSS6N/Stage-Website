@@ -127,7 +127,7 @@ try {
     // En cas d'erreur de connexion, redirige vers une page d'erreur
     $msg = $e->getMessage();
     header("Location: error.php?msg=" . $msg);
-    die("Connection failed: " . $e->getMessage() . ' <br> Wtih error n° ' . (int) $e->getCode());
+    die("La connexion à échoué: " . $e->getMessage() . ' <br> Code erreur n° ' . (int) $e->getCode());
 }
 //------------------------------------
 
@@ -159,7 +159,7 @@ $stmt->execute();
 
 if ($row = $stmt->fetch()) {
     if ((int) $row["cnt"] != 0) {
-        $msg = "Login or Email already exists in DB.";
+        $msg = "Login ou mail existe déjà dans la BDD";
     }
 } else {
     $msg = "Erreur SQL ?";

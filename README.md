@@ -10,6 +10,5 @@ Fonctionnalités :
     - Visuel créé avec Bootstrap.
 
 
-
-######
     - Tentative de création d'un bot discord, permettant d'interagir avec le site web.
+    Sinon application en python.
