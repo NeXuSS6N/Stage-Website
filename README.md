@@ -16,16 +16,3 @@ Bienvenue dans le projet de création d'un site web pour la DIRISI de Brest. Ce 
 
 - **Front-end** : HTML, CSS, [Bootstrap](https://getbootstrap.com/)
 - **Back-end** : PHP
-
-## 🚀 Utilisation
-
-### Création d'un compte utilisateur
-
-1. Accédez à la page de création de compte.
-2. Remplissez les informations nécessaires et cliquez sur "Créer un compte".
-
-### Export de la base de données (Admin uniquement)
-
-1. Connectez-vous en tant qu'administrateur.
-2. Accédez à la section "Administration".
-3. Cliquez sur "Exporter la base de données".
