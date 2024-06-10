@@ -6,7 +6,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-
     // Vérifie que tous les champs sont remplis
     if (empty($username) || empty($email) || empty($password)) {
         // Affiche un message d'erreur en JavaScript avec du CSS pour styliser le popup

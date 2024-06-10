@@ -112,6 +112,7 @@ if ($stmt->rowCount() == 1) {
         $_SESSION['LoggedIn'] = true;
         $_SESSION['login'] = $login;
         $_SESSION['Id'] = $row['J_Id'];
+        $_SESSION['Img'] = $row['J_Img'];
 
         //------------------------------------
     } else {

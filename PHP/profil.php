@@ -1,5 +1,6 @@
 <?php
 require_once '../BDD/constList.php';
+require_once '../BDD/DB_Conn.php';
 session_start();
 if (isset($_SESSION["LOGGEDIN"])) {
     $user = $_SESSION["LOGGEDIN"];
@@ -337,18 +338,18 @@ if (isset($_SESSION["LOGGEDIN"])) {
                 <div class="profil">
                     <div class="profil-text">
                         <div class="profil-image">
-                            <img src="../assets/default.png">
+                            <img src="<?php echo $_SESSION['Img'] ?>">
                         </div>
                         <h2>Profil de
                             <?php echo $_SESSION['login']; ?>
                         </h2>
                         <?php if ($_SESSION['Id'] === 999): ?>
-
+                            
                         <?php require_once "./users.php" ?>
                         <?php endif; ?> 
                     </div>
                 </div>
-                <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+                <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>   
 
                 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js"
                     integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp"
