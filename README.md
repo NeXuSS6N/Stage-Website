@@ -1,6 +1,6 @@
 # 🌐 Site Web pour le Stage à la DIRISI de Brest
 
-Bienvenue dans le projet de création d'un site web pour la DIRISI de Brest. Ce projet intègre une base de données sécurisée avec des fonctionnalités spécifiques pour les administrateurs et les utilisateurs.
+Projet de création d'un site web pour la DIRISI de Brest. Ce projet intègre une base de données sécurisée avec des fonctionnalités spécifiques pour les administrateurs et les utilisateurs.
 
 ## ✨ Fonctionnalités
 
@@ -15,4 +15,4 @@ Bienvenue dans le projet de création d'un site web pour la DIRISI de Brest. Ce 
 ## 🔧 Technologies Utilisées
 
 - **Front-end** : HTML, CSS, [Bootstrap](https://getbootstrap.com/)
-- **Back-end** : PHP
+- **Back-end** : PHP, JS
