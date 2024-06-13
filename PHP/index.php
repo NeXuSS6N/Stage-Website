@@ -1,6 +1,13 @@
 <?php
 require_once '../BDD/constList.php';
 session_start();
+
+// Check if the user is logged in and then set $userName
+if (isset($_SESSION['login'])) {
+  $userName = $_SESSION['login'];
+} else {
+  $userName = ""; // or any default value you prefer
+}
 ?>
 
 <?php
@@ -328,6 +335,48 @@ require_once "../BDD/DB_Conn.php"
               </li>
             </ul>
           </div>
+          <form id="chatForm">
+            <input type="text" id="message" name="message" placeholder="Votre message">
+            <button type="button" onclick="sendMessage()">Envoyer</button>
+          </form>
+          <script>
+            function sendMessage() {
+              var message = document.getElementById('message').value;
+
+              fetch('botsupport.php', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ message: message, userName: '<?php echo $userName; ?>' }),
+              })
+                .then(response => {
+                  if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                  }
+                  return response.json();
+                })
+                .then(data => {
+                  console.log('Success:', data);
+                })
+                .catch(error => {
+                  console.error('Error:', error);
+                });
+            }
+
+          </script>
+
+          <?php
+          $status = file_get_contents('http://localhost:81/status');
+          $statusData = json_decode($status, true);
+
+          if ($statusData['online']) {
+            echo "Le bot est en ligne!";
+          } else {
+            echo "Le bot est hors ligne.";
+          }
+          ?>
+
         </div>
       </div>
 
