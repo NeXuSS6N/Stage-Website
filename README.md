@@ -15,4 +15,4 @@ Projet de création d'un site web pour la DIRISI de Brest. Ce projet intègre un
 ## 🔧 Technologies Utilisées
 
 - **Front-end** : HTML, CSS, [Bootstrap](https://getbootstrap.com/)
-- **Back-end** : PHP, JS
+- **Back-end** : PHP, JS, HTMX, NodeJS
